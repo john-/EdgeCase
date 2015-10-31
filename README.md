@@ -1,0 +1,1 @@
+A minimal MPD (Music Player Daemon) html client with Mojolicious server.  Options to add some random songs to the playlist, pause, play, skip and change volume.

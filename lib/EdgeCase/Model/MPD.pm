@@ -30,10 +30,6 @@ sub random {
 
 	next ATTEMPT if grep(/^$attempt$/, @random_trail);
 	
-	#if (grep(/^$attempt$/, @random_trail)) {
-	#    next ATTEMPT;
-        #}
-	
         eval { $self->{mpd}->ping };  # restablish connection if it dropped
 	$self->{mpd}->add($tracks[$attempt]->{uri});
 	push @random_trail, $attempt;

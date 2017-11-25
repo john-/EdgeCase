@@ -67,9 +67,9 @@ sub volume {
     
     
     if ($direction eq 'up') { 
-	$self->{mpd}->volume( $self->{mpd}->volume + 10 );
+	$self->{mpd}->volume( $self->{mpd}->volume + 5 );
     } else {
-	$self->{mpd}->volume( $self->{mpd}->volume - 10 );
+	$self->{mpd}->volume( $self->{mpd}->volume - 5 );
     }
     
     return $self->{mpd}->volume;
